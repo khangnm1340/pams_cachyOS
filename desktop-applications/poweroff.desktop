@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Poweroff
+Comment=Shut down the computer
+Exec=pkill chrome && poweroff
+Icon=system-shutdown
+Terminal=false
+Type=Application
+Categories=System;

@@ -1,0 +1,9 @@
+~/.config
+~/.local/share
+~/dotfiles/dot-config
+~/builds
+~/.config/hypr
+~/Music/Zotify Albums
+~/.config/nushell
+~/.config/yazi
+/usr/bin

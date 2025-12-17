@@ -1,0 +1,20 @@
+frame = "none"
+
+[font]
+size = 15
+hinting = "full"
+edging = "antialias"
+
+
+[[font.normal]]
+family = "JetBrainsMono Nerd Font"
+style = "W400"
+
+# [[font.normal]]
+# family = "Ark Pixel 12px M latin"
+# style = "W400"
+#
+[[font.bold]]
+family = "JetBrainsMono Nerd Font"
+style = "W600"
+

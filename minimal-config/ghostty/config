@@ -1,0 +1,73 @@
+theme = TokyoNight Storm
+# theme = GitHub Light High Contrast
+background-opacity = 0.9
+confirm-close-surface = false
+quit-after-last-window-closed = false
+window-theme = ghostty
+unfocused-split-opacity = 0.8
+unfocused-split-fill = #000
+
+font-size = 15
+font-family = JetBrainsMono Nerd Font
+# font-family = Ark Pixel 12px M latin
+shell-integration-features = ssh-env
+
+# window-padding-x = 20
+# window-padding-y = 20
+
+split-divider-color = 2FF7E5
+
+keybind = ctrl+shift+n=unbind
+keybind = ctrl+shift+e=unbind
+keybind = ctrl+shift+q=unbind
+keybind = ctrl+shift+j=unbind
+keybind = ctrl+shift+k=unbind
+keybind = ctrl+shift+enter=unbind
+
+keybind = alt+;>k=new_split:right
+keybind = alt+;>j=new_split:down
+keybind = alt+l=toggle_split_zoom
+keybind = performable:alt+\=goto_split:next
+
+keybind = alt+shift+j=goto_split:down
+keybind = alt+shift+k=goto_split:up
+keybind = alt+shift+l=goto_split:right
+keybind = alt+shift+h=goto_split:left
+keybind = alt+;>s=open_config
+keybind = alt+;>r=prompt_surface_title
+keybind = alt+;>1=goto_tab:1
+keybind = alt+;>2=goto_tab:2
+keybind = alt+;>3=goto_tab:3
+keybind = alt+;>4=goto_tab:4
+keybind = alt+;>q=close_surface
+keybind = alt+;>shift+q=close_tab
+keybind = ctrl+;>t=new_tab
+keybind = alt+;>a=write_screen_file:open
+keybind = alt+;>shift+a=write_scrollback_file:open
+
+keybind = ctrl+k=unbind
+keybind = alt+shift+[=move_tab:-1
+keybind = alt+shift+]=move_tab:1
+
+keybind = ctrl+tab=unbind
+keybind = ctrl+shift+o=unbind
+
+keybind = alt+t=new_tab
+keybind = alt+;>t=new_tab
+keybind = alt+]=next_tab
+keybind = alt+[=previous_tab
+keybind = ctrl+shift+r=reload_config
+keybind = ctrl+shift+l=clear_screen
+keybind = shift+down=scroll_page_fractional:0.7
+keybind = shift+up=scroll_page_fractional:-0.7
+keybind = ctrl+]=scroll_page_lines:-1
+keybind = ctrl+[=scroll_page_lines:1
+
+keybind = alt+u=increase_font_size:1
+keybind = alt+shift+u=decrease_font_size:1
+keybind = alt+ctrl+u=reset_font_size
+
+#fixes nushell shift + enter
+# keybind = shift+enter=csi:13;2u
+
+command = /usr/bin/nu --login --interactive

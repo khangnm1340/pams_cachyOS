@@ -1,0 +1,13 @@
+export TERMINAL=ghostty
+export FILEMANAGER=nautilus
+export EDITOR=neovide
+export SUDO_EDITOR=nvim
+export VISUAL=nvim
+export _ZO_ECHO=1
+export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+export FZF_DEFAULT_COMMAND='fd -uE ".venv" -E ".rustup" -E ".cache"'
+export QT_QPA_PLATFORMTHEME=hyprqt6engine
+export MISC="$HOME/Documents/misc"
+
+export HYPRCURSOR_THEME=Future-Cyan
+export HYPRCURSOR_SIZE=42

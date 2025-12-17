@@ -1,0 +1,19 @@
+[mgr]
+#[ignore]
+prepend_keymap = [
+  { on = "<C-y>", run = [''' shell 'for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list' ''', "yank"], desc = "Yank to clipboard" },
+  { on = ["g", "a"], run = "shell 'echo $PWD >> ~/.config/nushell/cd_history.txt' ", desc = "copy current dir to cd_history.txt" },
+  { on = ["g", "A"], run = "shell 'echo $@ >> ~/.config/nushell/pams_history.txt' ", desc = "copy file to pams_history.txt" },
+  { on = ["C"] , run = "plugin ouch", desc = "Compress with ouch" },
+  { on = ["g", "j"], run = "cd ~/.config", desc = "Cd to config" },
+  { on = "Z", run = "plugin fzf", desc = "Jump to a file/directory via fzf" },
+  { on = "z", run = "plugin zoxide", desc = "Jump to a directory via zoxide" },
+  { on = ["f", "j"], run = "plugin first-non-directory", desc = "Jumps to the first file" },
+  { on = "<C-f>", run = "open --interactive", desc = "Open selected files interactively" },
+  { on = "<A-k>", run = "plugin hanni", desc = "fzf" },
+  { on = [ "c", "j" ], run = "copy dirname",          desc = "Copy the directory path" },
+  { on = "=", run = "hardlink", desc = "hardlink" },
+  { on = "T", run  = "plugin toggle-pane min-preview", desc = "Show or hide the preview pane"},
+  { on = [ "c", "m" ], run  = "plugin chmod", desc = "Chmod on selected files"}
+
+]

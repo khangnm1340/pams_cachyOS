@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Reboot
+Comment=Reboot the computer
+Exec=pkill chrome && reboot
+Icon=system-reboot
+Terminal=false
+Type=Application
+Categories=System;

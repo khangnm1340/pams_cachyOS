@@ -1,0 +1,8 @@
+~/.config/nushell/cd_history.txt
+~/.config/qutebrowser/config.py
+~/.config/hypr/modules/Keybinds.conf
+~/.config/ghostty/config
+~/.config/nushell/env.nu
+~/.config/nushell/config.nu
+~/.config/nvim/lua/core.lua
+~/.config/nvim/lua/keymaps.lua
