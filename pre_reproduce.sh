@@ -22,3 +22,11 @@ sudo usermod -aG nordvpn $USER
 cd ~/Documents/pams_cachyOS/
 /usr/bin/nu -c "nu backup_conf.nu" && /usr/bin/nu -c "nu reproduce.nu" && /usr/bin/nu -c "nu reproduce_2.nu" 
 # && /usr/bin/nu -c "nu STUPID_FUCKING_COMMAND.nu"
+#
+# git config --global user.email "you@example.com"
+# git config --global user.name "Your Name"
+#
+
+# ssh-keygen -t ed25519 -C "your_email@example.com"
+# Add the public key to your Git provider
+# cat ~/.ssh/id_ed25519.pub

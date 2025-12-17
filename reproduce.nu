@@ -5,7 +5,7 @@ let packages = [
     ghostty, alacritty, nordvpn-bin , tmux, vivid, localsend-bin,
     qutebrowser, helium-browser-bin, telegram-desktop,
     walker-bin, elephant-bin, elephant-all-bin,
-    thunderbird, qbittorrent,
+    thunderbird, qbittorrent, pwvucontrol,
     yazi, nautilus, zathura, jrnl, atuin,
     waybar, swaync, swayimg, nomacs
     ttf-jetbrains-mono-nerd , ttf-cascadia-mono-nerd, ark-pixel-font,

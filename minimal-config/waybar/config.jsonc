@@ -7,8 +7,6 @@
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
   "modules-right": [
-    // "group/tray-expander",
-    "custom/vpn",
     "idle_inhibitor",
     "wireplumber",
     "network",
@@ -16,12 +14,6 @@
     "battery",
     "custom/poweroff"
   ],
-"custom/vpn": {
-  "format": "{text}",
-  "interval": 10,
-  "exec": "~/.config/waybar/scripts/vpn-status.sh",
-  "on-click": "~/.config/hypr/scripts/nordvpn.sh",
-},
 "custom/poweroff": {
 "format": "",
 "on-click": "pkill chrome && poweroff",

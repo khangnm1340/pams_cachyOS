@@ -43,7 +43,7 @@ c.auto_save.session = True
 c.url.start_pages = ['qute://history/']
 
 
-c.content.user_stylesheets = ["~/dotfiles/dot-config/qutebrowser/styles/yt-tweaks.css"]
+c.content.user_stylesheets = ["~/.config/qutebrowser/styles/yt-tweaks.css"]
 c.hints.chars = 'qweruioasdfjklh'
 
 c.zoom.default = '125%'
