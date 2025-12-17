@@ -1,5 +1,5 @@
 
-cd $"($env.HOME)/Documents/the_arch_linux_project/minimal-config"
+cd $"($env.HOME)/Documents/pams_cachyOS/minimal-config"
 let dirs = (fd -t dir -d 1 --format '{/}' | lines)
 do {
 cd $"($env.HOME)/.config"

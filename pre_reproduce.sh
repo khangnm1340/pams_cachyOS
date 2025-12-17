@@ -2,7 +2,7 @@
 # please remove this
 # mkdir ~/my-drive
 # sudo mount /dev/nvme0n1p3 ~/my-drive
-# cp -pr ~/my-drive/@home/pampam/Documents/UTH/the_arch_linux_project ~/Documents/
+# cp -pr ~/my-drive/@home/pampam/Documents/UTH/pams_cachyOS ~/Documents/
 
 #yay
 mkdir ~/builds
@@ -19,6 +19,6 @@ yay && yay -S --needed nushell fd nordvpn-bin --noconfirm
 sudo groupadd nordvpn
 sudo usermod -aG nordvpn $USER
 
-cd ~/Documents/the_arch_linux_project/
+cd ~/Documents/pams_cachyOS/
 /usr/bin/nu -c "nu backup_conf.nu" && /usr/bin/nu -c "nu reproduce.nu" && /usr/bin/nu -c "nu reproduce_2.nu" 
 # && /usr/bin/nu -c "nu STUPID_FUCKING_COMMAND.nu"

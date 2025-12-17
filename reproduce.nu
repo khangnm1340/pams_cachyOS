@@ -24,7 +24,7 @@ yay -S --needed ...$packages --noconfirm
 let dirs = [ $"($env.HOME)/.local/share/fcitx5/themes/" , $"($env.HOME)/.local/share/icons" , $"($env.HOME)/.local/share/atuin/", $"($env.XDG_DATA_HOME)/applications" ]
 # , $"($env.HOME)/.local/share/nvim/site/pack/core/opt"
 
-cd $"($env.HOME)/Documents/the_arch_linux_project"
+cd $"($env.HOME)/Documents/pams_cachyOS"
 $dirs | each { mkdir $in }
 cp -r ./misc $"($env.HOME)/Documents/"
 cp -r ./desktop-applications/* $"($env.XDG_DATA_HOME)/applications"
