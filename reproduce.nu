@@ -8,7 +8,7 @@ let packages = [
     thunderbird, qbittorrent, pwvucontrol,
     yazi, nautilus, zathura, jrnl, atuin,
     waybar, swaync, swayimg, nomacs
-    ttf-jetbrains-mono-nerd , ttf-cascadia-mono-nerd, ark-pixel-font,
+    ttf-jetbrains-mono-nerd , ttf-cascadia-mono-nerd, ark-pixel-font, papirus-icon-theme, 
     hyprlock, hyprpicker, hypridle ,
     xdg-desktop-portal-hyprland, xdg-desktop-portal-gnome, xdg-desktop-portal-gtk, hyprpolkitagent, wayscriber-bin, 
     kanata-bin, whitesur-icon-theme, ttf-material-symbols-variable, 
