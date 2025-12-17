@@ -8,10 +8,10 @@ let packages = [
     thunderbird, qbittorrent,
     yazi, nautilus, zathura, jrnl, atuin,
     waybar, swaync, swayimg, nomacs
-    ttf-jetbrains-mono-nerd , ttf-cascadia-mono-nerd, woff2-font-awesome, ark-pixel-font,
+    ttf-jetbrains-mono-nerd , ttf-cascadia-mono-nerd, ark-pixel-font,
     hyprlock, hyprpicker, hypridle ,
     xdg-desktop-portal-hyprland, xdg-desktop-portal-gnome, xdg-desktop-portal-gtk, hyprpolkitagent, wayscriber-bin, 
-    kanata-bin, whitesur-icon-theme,
+    kanata-bin, whitesur-icon-theme, ttf-material-symbols-variable, 
     # spotify, spicetify-cli,
     fcitx5, fcitx5-configtool,
     xdg-desktop-portal-termfilechooser-hunkyburrito-git, mcomix,
