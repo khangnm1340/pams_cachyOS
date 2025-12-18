@@ -23,3 +23,9 @@ cd ~/Documents/pams_cachyOS/
 /usr/bin/nu -c "nu backup_conf.nu" && /usr/bin/nu -c "nu reproduce.nu" && /usr/bin/nu -c "nu reproduce_2.nu" 
 # && /usr/bin/nu -c "nu STUPID_FUCKING_COMMAND.nu"
 #
+# Ensure iwd service will be started
+sudo systemctl enable iwd.service
+
+# Prevent systemd-networkd-wait-online timeout on boot
+sudo systemctl disable systemd-networkd-wait-online.service
+sudo systemctl mask systemd-networkd-wait-online.service

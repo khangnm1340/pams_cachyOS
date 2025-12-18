@@ -5,9 +5,9 @@ let packages = [
     ghostty, alacritty, nordvpn-bin , tmux, vivid, localsend-bin,
     qutebrowser, helium-browser-bin, telegram-desktop,
     walker-bin, elephant-bin, elephant-all-bin,
-    thunderbird, qbittorrent, pwvucontrol,
+    thunderbird, qbittorrent, pwvucontrol, impala,
     yazi, nautilus, zathura, jrnl, atuin,
-    waybar, swaync, swayimg, nomacs
+    waybar, swaync, swayimg, nomacs, woff2-font-awesome,
     ttf-jetbrains-mono-nerd , ttf-cascadia-mono-nerd, ark-pixel-font, papirus-icon-theme, 
     hyprlock, hyprpicker, hypridle ,
     xdg-desktop-portal-hyprland, xdg-desktop-portal-gnome, xdg-desktop-portal-gtk, hyprpolkitagent, wayscriber-bin, 

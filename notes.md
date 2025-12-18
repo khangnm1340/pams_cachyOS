@@ -1,11 +1,13 @@
-install needy girl overload theme(icons,font,etc...)
-global misc directory (setting uwsm env)
-future cursor
-put the MISC into documents
-kde globals for dolphin
-qutebrowser cookie
-ouch
-yazi plugins
-desktop application
-fix neovim
-change the wallpaper
+- [x] install needy girl overload theme(icons,font,etc...)
+- [x] global misc directory (setting uwsm env)
+- [x] future cursor
+- [x] put the MISC into documents
+- [x] kde globals for dolphin
+- [ ] qutebrowser cookie
+- [x] ouch
+- [x] yazi plugins
+- [x] desktop application
+- [x] fix neovim
+- [ ] change the wallpaper
+- [ ] impala
+- [ ] theme switcher
