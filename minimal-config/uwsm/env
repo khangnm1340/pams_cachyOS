@@ -11,3 +11,5 @@ export MISC="$HOME/Documents/misc"
 
 export HYPRCURSOR_THEME=Future-Cyan
 export HYPRCURSOR_SIZE=42
+
+export APP2UNIT_SLICES='a=app-graphical.slice b=background-graphical.slice s=session-graphical.slice'

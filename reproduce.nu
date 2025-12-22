@@ -16,14 +16,14 @@ let packages = [
     walker-bin, elephant-bin, elephant-desktopapplications-bin, elephant-archlinuxpkgs-bin,
     elephant-clipboard-bin, elephant-symbols-bin, elephant-runner-bin, elephant-files-bin, elephant-menus-bin,
     thunderbird, qbittorrent, pwvucontrol, 
-    hyprpicker, 
+    hyprpicker, hyprshot,
     yazi, nautilus, zathura, jrnl, atuin,
     swayimg, nomacs, woff2-font-awesome,
     ttf-jetbrains-mono-nerd , ttf-cascadia-mono-nerd, ark-pixel-font, papirus-icon-theme, 
     xdg-desktop-portal-hyprland, xdg-desktop-portal-gnome, xdg-desktop-portal-gtk, hyprpolkitagent, wayscriber-bin, 
     kanata-bin, whitesur-icon-theme, ttf-material-symbols-variable, 
     # spotify, spicetify-cli,
-    fcitx5, fcitx5-configtool,
+    fcitx5, fcitx5-configtool, fcitx5-unikey,
     xdg-desktop-portal-termfilechooser-hunkyburrito-git, mcomix,
     zathura ,zathura-cb ,zathura-pdf-mupdf , qalculate-qt, uutils-coreutils
 ]
@@ -33,12 +33,19 @@ print "Would you like caelestia(1) or waybar(2)?"
 let choice = (input "'1' default : ")
 
 if $choice == "2" {
+    mv $"($env.HOME)/.config/hypr/hyprland_waybar.conf" $"($env.HOME)/.config/hypr/hyprland.conf" 
     yay -S --needed ...$packages ...$module_waybar --noconfirm
+# Ensure iwd service will be started
+    sudo systemctl enable iwd.service
+# Prevent systemd-networkd-wait-online timeout on boot
+    sudo systemctl disable systemd-networkd-wait-online.service
+    sudo systemctl mask systemd-networkd-wait-online.service
 } else {
+    mv $"($env.HOME)/.config/hypr/hyprland_caelestia.conf" $"($env.HOME)/.config/hypr/hyprland.conf" 
     yay -S --needed ...$packages ...$module_caelestia --noconfirm
 }
 
-let dirs = [ $"($env.HOME)/.local/share/fcitx5/themes/" , $"($env.HOME)/.local/share/icons" , $"($env.HOME)/.local/share/atuin/", $"($env.XDG_DATA_HOME)/applications" ]
+let dirs = [ $"($env.HOME)/.local/share/fcitx5/themes/" , $"($env.HOME)/.local/share/icons" , $"($env.HOME)/.local/share/atuin/", $"($env.XDG_DATA_HOME)/applications", $"($env.HOME)/Pictures/Wallpapers"]
 # , $"($env.HOME)/.local/share/nvim/site/pack/core/opt"
 
 cd $"($env.HOME)/Documents/pams_cachyOS"
@@ -46,6 +53,8 @@ $dirs | each { mkdir $in }
 cp -r ./misc $"($env.HOME)/Documents/"
 cp -r ./desktop-applications/* $"($env.XDG_DATA_HOME)/applications"
 #(needs to be a relative or absolute path for * to work)
+cp ./misc/kangel_12x.png $"($env.HOME)/Pictures/Wallpapers"
+
 
 
 
