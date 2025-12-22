@@ -11,3 +11,6 @@
 - [ ] change the wallpaper
 - [ ] impala
 - [ ] theme switcher
+
+- [ ] fcxit5 setup
+- [ ] modules
