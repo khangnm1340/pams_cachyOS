@@ -204,7 +204,7 @@ alias ff = uwsm-app -- fastfetch
 alias jo = uwsm-app -- nu -c 'job spawn {$in}'
 alias j = uwsm-app -t service --
 alias peak = bash -c "paste <(jack_meter -n -f 10 'Easy Effects Sink:monitor_FL') <(jack_meter -n -f 10 'Easy Effects Sink:monitor_FR')"
-alias ka = sudo kanata -c $"($env.HOME)/.config/kanata/2config.kdb"
+alias ka = ^sudo -b kanata -c $"($env.HOME)/.config/kanata/2config.kdb"
 
 
 alias f = plocate -i

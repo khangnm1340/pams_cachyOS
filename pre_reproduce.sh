@@ -19,9 +19,9 @@ yay && yay -S --needed nushell fd nordvpn-bin --noconfirm
 sudo groupadd nordvpn
 sudo usermod -aG nordvpn $USER
 
-sudo systemctl disable --now wpa_supplicant
+#sudo systemctl disable --now wpa_supplicant
 # Mask it to ensure nothing else starts it
-sudo systemctl mask wpa_supplicant
+#sudo systemctl mask wpa_supplicant
 
 # Prevent systemd-networkd-wait-online timeout on boot
 sudo systemctl disable systemd-networkd-wait-online.service

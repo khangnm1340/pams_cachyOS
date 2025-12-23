@@ -15,7 +15,7 @@ let packages = [
     qutebrowser, helium-browser-bin, telegram-desktop,
     walker-bin, elephant-bin, elephant-desktopapplications-bin, elephant-archlinuxpkgs-bin,
     elephant-clipboard-bin, elephant-symbols-bin, elephant-runner-bin, elephant-files-bin, elephant-menus-bin,
-    thunderbird, qbittorrent, pwvucontrol, 
+    thunderbird, qbittorrent, pwvucontrol, rust,
     hyprpicker, hyprshot, iwd, ntfs-3g ,
     yazi, nautilus, zathura, jrnl, atuin,
     swayimg, nomacs, woff2-font-awesome,
@@ -35,8 +35,8 @@ let choice = (input "'1' default : ")
 if $choice == "2" {
     mv $"($env.HOME)/.config/hypr/hyprland_waybar.conf" $"($env.HOME)/.config/hypr/hyprland.conf" 
     yay -S --needed ...$packages ...$module_waybar --noconfirm
-    sudo systemctl disable --now NetworkManager
-    sudo systemctl enable --now iwd
+#sudo systemctl disable --now NetworkManager
+#sudo systemctl enable --now iwd
 # Ensure iwd service will be started
     # sudo systemctl enable iwd.service
 } else {
