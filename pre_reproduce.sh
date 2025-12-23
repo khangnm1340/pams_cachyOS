@@ -31,3 +31,4 @@ cd ~/Documents/pams_cachyOS/
 /usr/bin/nu -c "nu backup_conf.nu" && /usr/bin/nu -c "nu reproduce.nu" && /usr/bin/nu -c "nu reproduce_2.nu" 
 # && /usr/bin/nu -c "nu STUPID_FUCKING_COMMAND.nu"
 #
+#

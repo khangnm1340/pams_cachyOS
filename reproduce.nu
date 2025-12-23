@@ -9,14 +9,14 @@ let module_caelestia = [
 
 # clone the config first
 let packages = [
-    neovim-git, neovide, zed , tree-sitter-cli, sudo-rs, loupe, mediainfo,
+    neovim-git, neovide, zed , tree-sitter-cli, sudo-rs, loupe, mediainfo, woomer,
     cliphist, ouch, fzf , zoxide, mpv, starship, lazygit,
     ghostty, alacritty, nordvpn-bin , tmux, vivid, localsend-bin,
     qutebrowser, helium-browser-bin, telegram-desktop,
     walker-bin, elephant-bin, elephant-desktopapplications-bin, elephant-archlinuxpkgs-bin,
     elephant-clipboard-bin, elephant-symbols-bin, elephant-runner-bin, elephant-files-bin, elephant-menus-bin,
     thunderbird, qbittorrent, pwvucontrol, rust,
-    hyprpicker, hyprshot, iwd, ntfs-3g ,
+    hyprpicker, hyprshot, iwd, ntfs-3g, qt6ct, nwg-look,
     yazi, nautilus, zathura, jrnl, atuin,
     swayimg, nomacs, woff2-font-awesome,
     ttf-jetbrains-mono-nerd , ttf-cascadia-mono-nerd, ark-pixel-font, papirus-icon-theme, 

@@ -1,7 +1,7 @@
 {
   "launcher": {
     "vimKeybinds": true,
-    "showOnHover": true,
+    "showOnHover": false,
     "hiddenApps": [
       "in.lsp_plug.lsp_plugins_ab_tester_x2_mono",
       "in.lsp_plug.lsp_plugins_ab_tester_x2_stereo",
