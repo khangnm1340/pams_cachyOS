@@ -16,7 +16,7 @@ let packages = [
     walker-bin, elephant-bin, elephant-desktopapplications-bin, elephant-archlinuxpkgs-bin,
     elephant-clipboard-bin, elephant-symbols-bin, elephant-runner-bin, elephant-files-bin, elephant-menus-bin,
     thunderbird, qbittorrent, pwvucontrol, 
-    hyprpicker, hyprshot,
+    hyprpicker, hyprshot, iwd, ntfs-3g ,
     yazi, nautilus, zathura, jrnl, atuin,
     swayimg, nomacs, woff2-font-awesome,
     ttf-jetbrains-mono-nerd , ttf-cascadia-mono-nerd, ark-pixel-font, papirus-icon-theme, 
@@ -35,17 +35,16 @@ let choice = (input "'1' default : ")
 if $choice == "2" {
     mv $"($env.HOME)/.config/hypr/hyprland_waybar.conf" $"($env.HOME)/.config/hypr/hyprland.conf" 
     yay -S --needed ...$packages ...$module_waybar --noconfirm
+    sudo systemctl disable --now NetworkManager
+    sudo systemctl enable --now iwd
 # Ensure iwd service will be started
-    sudo systemctl enable iwd.service
-# Prevent systemd-networkd-wait-online timeout on boot
-    sudo systemctl disable systemd-networkd-wait-online.service
-    sudo systemctl mask systemd-networkd-wait-online.service
+    # sudo systemctl enable iwd.service
 } else {
     mv $"($env.HOME)/.config/hypr/hyprland_caelestia.conf" $"($env.HOME)/.config/hypr/hyprland.conf" 
     yay -S --needed ...$packages ...$module_caelestia --noconfirm
 }
 
-let dirs = [ $"($env.HOME)/.local/share/fcitx5/themes/" , $"($env.HOME)/.local/share/icons" , $"($env.HOME)/.local/share/atuin/", $"($env.XDG_DATA_HOME)/applications", $"($env.HOME)/Pictures/Wallpapers"]
+let dirs = [ $"($env.HOME)/.local/share/fcitx5/themes/" , $"($env.HOME)/.local/share/icons" , $"($env.HOME)/.local/share/atuin/", $"($env.HOME)/.local/share/applications", $"($env.HOME)/Pictures/Wallpapers"]
 # , $"($env.HOME)/.local/share/nvim/site/pack/core/opt"
 
 cd $"($env.HOME)/Documents/pams_cachyOS"

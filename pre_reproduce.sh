@@ -19,6 +19,14 @@ yay && yay -S --needed nushell fd nordvpn-bin --noconfirm
 sudo groupadd nordvpn
 sudo usermod -aG nordvpn $USER
 
+sudo systemctl disable --now wpa_supplicant
+# Mask it to ensure nothing else starts it
+sudo systemctl mask wpa_supplicant
+
+# Prevent systemd-networkd-wait-online timeout on boot
+sudo systemctl disable systemd-networkd-wait-online.service
+sudo systemctl mask systemd-networkd-wait-online.service
+
 cd ~/Documents/pams_cachyOS/
 /usr/bin/nu -c "nu backup_conf.nu" && /usr/bin/nu -c "nu reproduce.nu" && /usr/bin/nu -c "nu reproduce_2.nu" 
 # && /usr/bin/nu -c "nu STUPID_FUCKING_COMMAND.nu"
